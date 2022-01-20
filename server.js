@@ -1,25 +1,36 @@
 const express = require('express');
 
 const app = express();
-const http = require('http');
-
-const server = http.createServer(app);
-const { Server } = require('socket.io');
-
-const io = new Server(server);
+const cors = require('cors');
+const http = require('http').createServer(app);
+const socketIo = require('socket.io');
 const modelMessage = require('./models/message');
+const { createString } = require('./middlewares/helper');
 
-app.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
+const io = socketIo(http, {
+    cors: {
+        origin: 'http://localhost:3000',
+        method: ['GET', 'POST'],
+    },
 });
 
+app.use(cors());
+
+const list = [];
+
 io.on('connection', (socket) => {
-  socket.on('message', ({ chatMessage, nickname }) => {
+  socket.on('newUser', (nickname) => {
+    list.push({ id: socket.id, nickname });
+    io.emit('newUser', list);
+  });
+
+  socket.on('message', ({ chatMessage, nickname = createString(16) }) => {
     const messageFormat = modelMessage(chatMessage, nickname);
     io.emit('message', messageFormat);
   });
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+app.get('/', (_req, res) => {
+  res.sendFile(`${__dirname}/index.html`);
 });
+http.listen(3000, () => console.log('Ouvindo a porta 3000'));
