@@ -47,6 +47,7 @@
     const newMessage = document.querySelector('#msgInput');
     const newNickname = document.querySelector('#nickname');
     const userUl = document.querySelector('#users');
+    const messagesUl = document.querySelector('#messages');
 
     const createMessage = (message) => {
       const messagesUl = document.querySelector('#messages');
@@ -56,13 +57,24 @@
       messagesUl.appendChild(li);
     };
 
-    const findUser = (userList) => {
+    const createUser = (userList) => {
       userList.forEach((list) => {
         const userLi = document.createElement('li');
         userLi.setAttribute('data-testid', 'online-user');
         userLi.textContent = list.nickname;
         userUl.appendChild(userLi)
       })
+    }
+
+    const historicMessages = (allMessages) => {
+      if(allMessages) {
+        allMessages.forEach(({ chatMessage, nickname, timestamp }) => {
+          const historyLi = document.createElement('li');
+          historyLi.setAttribute('data-testid', 'message');
+          historyLi.textContent = `${timestamp} - ${nickname}: ${chatMessage}`;
+          messagesUl.appendChild(historyLi);
+        })
+      }
     }
 
     form.addEventListener('submit', (e) => {
@@ -73,7 +85,8 @@
     });
 
     socket.on('message', (message) => createMessage(message));
-    socket.on('newUser', (userList) => findUser(userList));
+    socket.on('newUser', (userList) => createUser(userList));
+    socket.on('historyMessages', (allMessages) => historicMessages(allMessages))
   </script>
 </body>
 </html>
