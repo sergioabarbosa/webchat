@@ -19,10 +19,19 @@ app.use(cors());
 
 const usersList = [];
 
+let messages = [];
+
 const dateTime = format(new Date(), 'dd-MM-yyy HH:mm:ss');
+
+const getMsg = async () => {
+  messages = await getMessages();
+};
+
+getMsg();
+
 io.on('connection', async (socket) => {
-  const messages = await getMessages();
   socket.emit('historyMessages', messages);
+  
   socket.on('newUser', (nickname) => {
     usersList.push({ id: socket.id, nickname });
     io.emit('updateUsers', usersList);
@@ -31,6 +40,7 @@ io.on('connection', async (socket) => {
   socket.on('message', async ({ chatMessage, nickname = createString(16) }) => {
     await insertMessage({ chatMessage, nickname, dateTime });
     io.emit('message', `${dateTime} - ${nickname} - ${chatMessage}`);
+    messages.push({ chatMessage, nickname, dateTime });
   });
 
   socket.on('disconnect', async () => {
