@@ -1,0 +1,54 @@
+html , body {
+  height: 100%;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.messages {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 2vw;
+  text-align: center;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 1.5vw;
+  height: 5vw;
+  margin-bottom: 10vh;
+  padding: 0 2vw;
+  width: 30vw;
+}
+
+hr {
+  background-color: #069;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+button {
+  background: #069;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 700;
+  height: 5vw;
+  line-height: 5vw;
+  margin-top: 1vw;
+  text-align: center;
+  width: 10vw;
+}
+
+.form-bottom {
+  background-color: bisque;
+}
