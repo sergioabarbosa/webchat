@@ -35,6 +35,12 @@ hr {
   margin-top: 5vh;
 }
 
+.hr1 {
+  background-color: #069;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 button {
   background: #069;
   border: none;
@@ -51,4 +57,51 @@ button {
 
 .form-bottom {
   background-color: bisque;
+}
+
+.online-users-text {
+  color: rgb(0, 102, 53);
+}
+
+.title-page {
+  background-color: cadetblue;
+  color: #069;
+  padding-bottom: 2vh;
+  padding-top: 3vh;
+}
+
+.footer-menu {
+  background-color: cadetblue;
+  list-style-type: none;
+  margin: 0;
+  max-height: 50vh;
+  padding: 0;
+}
+
+.footer-ul {
+  align-items: center;
+  background-color: cadetblue;
+  display: flex;
+  list-style-type: none;
+  margin-right: auto;
+  padding: 3vw;
+  padding-bottom: 5vh;
+  text-align: center;
+  width: 200vh;
+}
+
+.footer-menu li a {
+  color: #069;
+  text-decoration: none;
+}
+
+.image {
+  flex-direction: column;
+  padding: 2vh 2vw;
+  text-align: center;
+  width: 12vw;
+}
+
+.footer-title {
+  color: #069;
 }
