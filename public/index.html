@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebChat</title>
+    <style>
+      body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #input:focus { outline: none; }
+      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages > li { padding: 0.5rem 1rem; }
+      #messages > li:nth-child(odd) { background: #efefef; }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>   
+    <script>
+      const socket = window.io();
+      </script>
+      <link rel="stylesheet" href="styles.css">
+      <link href="./styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+  <body>
+    <h2 class="title-page">Webchat Socket</h2>
+    <div>
+      <ul id="messages"></ul>
+      <hr class="hr1">
+      <h2 class="title-page">Webchat Socket</h2>
+      <input data-testid="nickname-box" id='nickname' placeholder="Escolha um Nickname" />
+      <button id="changeNickname" class="button-nick" data-testid="nickname-button">Change Nickname</button> 
+    </div>
+    <hr>
+      <h3 class="online-users-text">Usuários Online</h3>
+      <ul id="users"></ul>
+    <hr>
+    <form action="">
+      <input  data-testid="message-box" id="messageInput" placeholder="Digite sua mensagem" autocomplete="off" />
+      <button data-testid="send-button">Enviar</button>
+    </form>
+  <footer class="footer-menu"><p class="footer-title">@2022 By Sérgio Alves Barbosa</p>
+    <ul class="footer-ul">
+      <li><a href="https://www.linkedin.com/in/sergio-alves-barbosa/"><img src="images/linkedin.svg" alt="imagem do linkedin" class="image"></a></li>
+      <li><a href="https://github.com/sergioabarbosa"><img src="images/github.svg" alt="imagem do github" class="image"></a></li>
+    </ul>
+  </footer>
+  <script>
+
+const form = document.querySelector('form');
+const inputMessage = document.querySelector('#messageInput');
+const inputNickname = document.querySelector('#nickname');
+const userUl = document.querySelector('#users');
+const messagesUl = document.querySelector('#messages');
+const nicknameButton = document.querySelector('#changeNickname')
+
+const createString = () => {
+  let stringAleatoria = '';
+  const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (let i = 0; i < 16; i += 1) {
+      stringAleatoria += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+  }
+  sessionStorage.setItem('nickname', stringAleatoria);
+  socket.emit('newUser', stringAleatoria);
+};
+
+createString();
+
+const createMessage = (message) => {
+  const messagesUl = document.querySelector('#messages');
+  const li = document.createElement('li');
+  li.setAttribute('data-testid', 'message');
+  li.innerText = message;
+  messagesUl.appendChild(li);
+};
+
+socket.on('message', (message) => createMessage(message));
+
+const createUser = (userList) => {
+  userUl.innerHTML = '';
+  userList.forEach((list) => {
+    const userLi = document.createElement('li');
+    userLi.setAttribute('data-testid', 'online-user');
+    userLi.textContent = list.nickname;
+    userLi.id = userLi.innerText;
+    socket.id === list.id ? userUl.prepend(userLi) : userUl.appendChild(userLi);
+  })
+}
+
+socket.on('updateUsers', (userList) => createUser(userList));
+
+const logUser = (user) => {
+  const li = document.createElement('li');
+  li.innerText = user.nickname;
+  li.setAttribute('data-testid', 'online-user');
+  userUl.appendChild(li);
+}
+
+const deleteUser = (users) => {
+  userUl.innerHTML = '';
+  const user = users.find((user) => user.id === socket.id);
+  logUser(users);
+  users.forEach((item) => item.id !== item.id && logUser(item));
+}
+
+socket.on('usersOnline', (user) => deleteUser(user));
+
+    const historicMessages = (allMessages) => {
+      let messagesIntegerValue = allMessages;
+      let maxMessages = messagesIntegerValue.slice(0, 30);
+      if(maxMessages) {
+        maxMessages.forEach(({ chatMessage, nickname, timestamp }) => {
+          const historyLi = document.createElement('li');
+          historyLi.setAttribute('data-testid', 'message');
+          historyLi.textContent = `${timestamp} - ${nickname}: ${chatMessage}`;
+          messagesUl.appendChild(historyLi);
+          window.scrollTo(0, document.body.scrollHeight);
+
+        })
+      }
+    }
+
+socket.on('historyMessages', (allMessages) => historicMessages(allMessages));
+
+nicknameButton.addEventListener('click', () => {
+  socket.emit('changeNick', inputNickname.value);
+  sessionStorage.setItem('nickname', inputNickname.value);
+  inputNickname.value = '';
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nicknameValue = sessionStorage.getItem('nickname');
+  socket.emit('message', { chatMessage: inputMessage.value, nickname: nicknameValue }); 
+  inputMessage.value = '';
+});
+
+    socket.on('changeNickname', (nickname, id) => attNickname(nickname, id));
+  </script>
+</body>
+</html>
