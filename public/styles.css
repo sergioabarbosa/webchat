@@ -52,3 +52,7 @@ button {
 .form-bottom {
   background-color: bisque;
 }
+
+.online-users-text {
+  color: rgb(0, 102, 53);
+}
