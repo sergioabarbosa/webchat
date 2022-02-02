@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WebChat - trybe</title>
+    <title>WebChat</title>
     <script src="/socket.io/socket.io.js"></script>   
     <script>
       const socket = window.io();
@@ -10,15 +10,17 @@
       <link href="./styles.css" rel="stylesheet" type="text/css"/>
     </head>
   <body>
+    <h2 class="title-page">Webchat Socket</h2>
     <div>
       <ul id="messages"></ul>
-      <hr>
+      <hr class="hr1">
+      <h2 class="title-page">Webchat Socket</h2>
       <input data-testid="nickname-box" id='nickname' placeholder="Escolha um Nickname" />
       <button id="changeNickname" class="button-nick" data-testid="nickname-button">Change Nickname</button> 
     </div>
     <hr>
-    <h3 class="online-users-text">Usuários Online</h3>
-    <ul id="users"></ul>
+      <h3 class="online-users-text">Usuários Online</h3>
+      <ul id="users"></ul>
     <hr>
     <form action="">
       <input  data-testid="message-box" id="messageInput" placeholder="Digite sua mensagem" autocomplete="off" />
@@ -86,8 +88,11 @@ const deleteUser = (users) => {
 socket.on('usersOnline', (user) => deleteUser(user));
 
     const historicMessages = (allMessages) => {
-      if(allMessages) {
-        allMessages.forEach(({ chatMessage, nickname, timestamp }) => {
+      let messagesIntegerValue = allMessages;
+      var maxMessages = messagesIntegerValue.slice(0, 30);
+      console.log(maxMessages);
+      if(maxMessages) {
+        maxMessages.forEach(({ chatMessage, nickname, timestamp }) => {
           const historyLi = document.createElement('li');
           historyLi.setAttribute('data-testid', 'message');
           historyLi.textContent = `${timestamp} - ${nickname}: ${chatMessage}`;
