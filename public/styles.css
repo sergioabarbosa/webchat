@@ -69,3 +69,39 @@ button {
   padding-bottom: 2vh;
   padding-top: 3vh;
 }
+
+.footer-menu {
+  background-color: cadetblue;
+  list-style-type: none;
+  margin: 0;
+  max-height: 50vh;
+  padding: 0;
+}
+
+.footer-ul {
+  align-items: center;
+  background-color: cadetblue;
+  display: flex;
+  list-style-type: none;
+  margin-right: auto;
+  padding: 3vw;
+  padding-bottom: 5vh;
+  text-align: center;
+  width: 200vh;
+}
+
+.footer-menu li a {
+  color: #069;
+  text-decoration: none;
+}
+
+.image {
+  flex-direction: column;
+  padding: 2vh 2vw;
+  text-align: center;
+  width: 12vw;
+}
+
+.footer-title {
+  color: #069;
+}

@@ -2,6 +2,18 @@
 <html>
   <head>
     <title>WebChat</title>
+    <style>
+      body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #input:focus { outline: none; }
+      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages > li { padding: 0.5rem 1rem; }
+      #messages > li:nth-child(odd) { background: #efefef; }
+    </style>
     <script src="/socket.io/socket.io.js"></script>   
     <script>
       const socket = window.io();
@@ -26,7 +38,12 @@
       <input  data-testid="message-box" id="messageInput" placeholder="Digite sua mensagem" autocomplete="off" />
       <button data-testid="send-button">Enviar</button>
     </form>
-
+  <footer class="footer-menu"><p class="footer-title">@2022 By Sérgio Alves Barbosa</p>
+    <ul class="footer-ul">
+      <li><a href="https://www.linkedin.com/in/sergio-alves-barbosa/"><img src="images/linkedin.svg" alt="imagem do linkedin" class="image"></a></li>
+      <li><a href="https://github.com/sergioabarbosa"><img src="images/github.svg" alt="imagem do github" class="image"></a></li>
+    </ul>
+  </footer>
   <script>
 
 const form = document.querySelector('form');
@@ -89,8 +106,7 @@ socket.on('usersOnline', (user) => deleteUser(user));
 
     const historicMessages = (allMessages) => {
       let messagesIntegerValue = allMessages;
-      var maxMessages = messagesIntegerValue.slice(0, 30);
-      console.log(maxMessages);
+      let maxMessages = messagesIntegerValue.slice(0, 30);
       if(maxMessages) {
         maxMessages.forEach(({ chatMessage, nickname, timestamp }) => {
           const historyLi = document.createElement('li');
