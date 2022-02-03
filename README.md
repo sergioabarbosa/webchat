@@ -122,6 +122,23 @@ Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
 
   <hr>
   
+  <h3>Testes</h3>
+  Teste 1 - Back-end: Conexão simultânea de clientes e troca de mensagens em chat público;
+            -Será validado que todos os clientes que estão conectados ao chat podem enviar e receber mensagens;
+  
+  Teste 2 - Interface de Usuário para interação dos clientes;
+            - Será validado que o front-end tem um campo de texto para preencher um nome de usuário e um botão para alterar o apelido (nickname);
+  
+  Reste 3 - Verifique se as mensagens são persistentes;
+            - Será validado que o histórico de 30 mensagens irá aparecer quando o cliente se conectar;
+  
+  Execução dos testes:
+  
+  Com o servidor rodando digite em seu terminal : npm test tests/teste[numero_do_teste]
+  Exempĺos: npm test tests/teste1; npm test tests/teste2; npm test tests/teste3.
+            
+  
+  
 
  
   
