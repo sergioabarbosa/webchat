@@ -123,9 +123,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
  <p>Com o servidor rodando digite em seu terminal : npm test tests/teste[numero_do_teste]</p>
   <p>Exempĺos:</p>
-   <p>-> npm test tests/teste1;</p>
-   <p>-> npm test tests/teste2;</p>
-   <p>-> npm test tests/teste3.</p>
+   <p> > npm test tests/teste1;</p>
+   <p> > npm test tests/teste2;</p>
+   <p> > npm test tests/teste3.</p>
   
  <hr>
   
