@@ -102,6 +102,21 @@ button {
   width: 12vw;
 }
 
+.image_logo {
+  flex-direction: column;
+  padding: 2vh 2vw;
+  text-align: center;
+  width: 15vw;
+}
+
+.image_chat_footer {
+  border-radius: 5vw;
+  flex-direction: column;
+  padding: 2vh 2vw;
+  text-align: center;
+  width: 12vw;
+}
+
 .footer-title {
   color: #069;
 }
