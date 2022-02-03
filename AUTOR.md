@@ -4,7 +4,7 @@
 <a href="https://blog.rocketseat.com.br/author/thiago/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36240511?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Sérgio Babrosa</b></sub></a> <a href="" title="Rocketseat">🚀</a>
+ <sub><b>Sérgio Barbosa</b></sub></a> <a href="" title="Rocketseat">🚀</a>
 
 
 Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
