@@ -61,6 +61,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
+<div>
+
 ### 🎲 Rodando o Back End (servidor)
 
 ```bash
@@ -77,8 +79,18 @@ $ npm install
 $ npm start
 
 # O servidor inciará na porta:3000 - acesse <http://localhost:3333>
-###
+  
+```
+  <hr>
+  
+  ### 🛠 Tecnologias
 
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [HTML5](https://www.w3.org/)
+- [Node.js](https://nodejs.org/en/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
+- [Socket](https://reactnative.dev/)
 
 
 
