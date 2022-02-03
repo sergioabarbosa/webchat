@@ -91,6 +91,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
 - [Socket](https://reactnative.dev/)
+  
+  <h3>Como usar</h3>
+  Com o servidor iniciado:
+  - Acesse o endereço do site. Para acesso local digite em seu navegador: http://localhost:3000.
+  <div align="center"><img src="https://user-images.githubusercontent.com/36240511/152368828-5b344049-7ef5-4b95-9123-6f9d86226557.png" width="750"></div>
+  
+  
+  
 
 
 
