@@ -9,13 +9,9 @@ Tabela de conteúdos
    * [Features](#Features)
    * [Instalação](#instalação)
    * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
+   * [Pré-Requisitos](#Pré-requisitos)
+   * [Testes](#testes)
+   * [Tecnologias](#Tecnologias)
    
    <hr>
    
@@ -92,6 +88,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
 - [Socket](https://reactnative.dev/)
   
+    <div>
+  <img align="center" alt="Sérgio-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Sérgio-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Sérgio-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+  <img align="center" alt="Sérgio-git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+  <img align="center" alt="Sérgio-socketio" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg">
+   </div>
+  
   <div align="justify">
   <h3>Como usar</h3>
   Com o servidor iniciado:
@@ -103,17 +107,53 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <div align="center"><img src="https://user-images.githubusercontent.com/36240511/152368828-5b344049-7ef5-4b95-9123-6f9d86226557.png" width="750"></div>
   </div>
   
-  <h3>Author</hr>
-  ### Autor
----
-
+  <hr>
+  
+  <h3>Testes</h3>
+  Teste 1 - Back-end: Conexão simultânea de clientes e troca de mensagens em chat público;
+            -Será validado que todos os clientes que estão conectados ao chat podem enviar e receber mensagens;
+  
+  Teste 2 - Interface de Usuário para interação dos clientes;
+            - Será validado que o front-end tem um campo de texto para preencher um nome de usuário e um botão para alterar o apelido (nickname);
+  
+  Reste 3 - Verifique se as mensagens são persistentes;
+            - Será validado que o histórico de 30 mensagens irá aparecer quando o cliente se conectar;
+  
+  Execução dos testes:
+  
+ <p>Com o servidor rodando digite em seu terminal : npm test tests/teste[numero_do_teste]</p>
+  <p>Exempĺos:</p>
+   <p> > npm test tests/teste1;</p>
+   <p> > npm test tests/teste2;</p>
+   <p> > npm test tests/teste3.</p>
+  
+ <hr>
+  
+<h3>Author</h3>
+  
 <a href="https://blog.rocketseat.com.br/author/thiago/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36240511?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Sérgio Barbosa</b></sub></a> <a href="" title="Rocketseat">🚀</a>
 
 
-Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
+  Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
+  <p><img align="center" alt="Sérgio-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="Sérgio-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Sérgio-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Sérgio-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="Sérgio-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+  <img align="center" alt="Sérgio-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+  <img align="center" alt="Sérgio-git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"></p>
 
-[![Instagram Badge](https://img.shields.io/badge/-@sergiobarbo-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/Sergio20barbosa)](https://twitter.com/@Sergio20barbosa) [![Linkedin Badge](https://img.shields.io/badge/-Sergio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sergio-alves-barbosa)](https://www.linkedin.com/in/sergio-alves-barbosa/) 
-[![Gmail Badge](https://img.shields.io/badge/-sergio.alvesbarbosa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sergio.alvesbarbosa@gmail.com)](mailto:sergio.alvesbarbosa@gmail.com)
+   <div> 
+  <a href="https://www.youtube.com/channel/UCm0-AxXlM28i6TGjJC6aWsA" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/sergiobarbo/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+ 	<a href="https://www.twitch.tv/cangaceirobra" target="_blank"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
+ <a href="https://discord.gg/CANGACEIRO#2031" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
+  <a href = "mailto:sergio.alvesbarbosa@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/sergioabarbosa" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+ 
+ <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
+ 
+</div>
