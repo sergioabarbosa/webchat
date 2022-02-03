@@ -33,6 +33,17 @@ Tabela de conteúdos
 
 <h3>Status</h3>
 
+<h4 align="left"> 
+  Node.js 🚀 Concluído
+  
+  ### Features
+
+- [x] Envio e recebimento de mensagens
+- [x] Alteração de nickname
+- [x] Persisteência de dados
+  
+</h4>
+
 
 
 
