@@ -17,6 +17,8 @@ Tabela de conteúdos
    * [Tests](#testes)
    * [Tecnologias](#tecnologias)
    
+   <hr>
+   
    <h3>Sobre</h3>
    
    <div align="justify"><p text-align: justify>Deu vontade de teclar um pouco com os amigos? Webchat Socket está prontinho para lhe satisfazer. Webchat Socket utiliza um moderno sistema de troca de mensagens instântaneas, baseado no modelo de comunicação full-duplex, onde se abre um canal permanete de comunicação entre cliente e servidor. Assim seu papo estará sempre em dia e as notícias sempre bem atualizadas.
@@ -32,10 +34,13 @@ Tabela de conteúdos
 <p align="center">🚀 lib para utilização de Socket</p>
 </div>
 
+<hr>
 <h3>Status</h3>
 
 <h4 align="left"> 
   Node.js 🚀 Concluído
+  
+  <hr>
   
   ### Features
 
