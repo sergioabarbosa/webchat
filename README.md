@@ -5,9 +5,9 @@
 Tabela de conteúdos
 =================
    * [Sobre](#Sobre)
-   * [Instalação](#instalacao)
    * [Status do Projeto](#Status)
    * [Features](#Features)
+   * [Instalação](#instalacao)
    * [Como usar](#como-usar)
       * [Pre Requisitos](#pre-requisitos)
       * [Local files](#local-files)
