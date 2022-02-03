@@ -5,7 +5,7 @@
 Tabela de conteúdos
 =================
    * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
+   * [Status do Projeto](#Status do Projeto)
    * [Instalação](#instalacao)
    * [Como usar](#como-usar)
       * [Pre Requisitos](#pre-requisitos)
@@ -30,6 +30,9 @@ Tabela de conteúdos
 </h1>
 <p align="center">🚀 lib para utilização de Socket</p>
 </div>
+
+<h3>Status do Projeto</h3>
+
 
 
 
