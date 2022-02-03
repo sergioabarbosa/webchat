@@ -31,7 +31,7 @@ Tabela de conteúdos
 <p align="center">🚀 lib para utilização de Socket</p>
 </div>
 
-<h3>Status do Projeto</h3>
+<h3>Status</h3>
 
 
 
