@@ -92,6 +92,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
 - [Socket](https://reactnative.dev/)
   
+    <div>
+  <img align="center" alt="Sérgio-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Sérgio-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Sérgio-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+  <img align="center" alt="Sérgio-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+  <img align="center" alt="Sérgio-git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+  </div>
+  
   <div align="justify">
   <h3>Como usar</h3>
   Com o servidor iniciado:
@@ -104,9 +112,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   </div>
   
   <h3>Author</hr>
-  ### Autor
----
-
+  
 <a href="https://blog.rocketseat.com.br/author/thiago/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36240511?v=4" width="100px;" alt=""/>
  <br />
@@ -117,6 +123,9 @@ Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
 
 [![Instagram Badge](https://img.shields.io/badge/-@sergiobarbo-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/Sergio20barbosa)](https://twitter.com/@Sergio20barbosa) [![Linkedin Badge](https://img.shields.io/badge/-Sergio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sergio-alves-barbosa)](https://www.linkedin.com/in/sergio-alves-barbosa/) 
 [![Gmail Badge](https://img.shields.io/badge/-sergio.alvesbarbosa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sergio.alvesbarbosa@gmail.com)](mailto:sergio.alvesbarbosa@gmail.com)
+
+  <hr>
+  
 
  
   
