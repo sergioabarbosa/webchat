@@ -94,6 +94,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
   <h3>Como usar</h3>
   Com o servidor iniciado:
+  
+  - Com o projeto devidamente clonado e com as dependências instaladas(NPM) digite em seu terminal: npm start.
   - Acesse o endereço do site. Para acesso local digite em seu navegador: http://localhost:3000.
   <div align="center"><img src="https://user-images.githubusercontent.com/36240511/152368828-5b344049-7ef5-4b95-9123-6f9d86226557.png" width="750"></div>
   
