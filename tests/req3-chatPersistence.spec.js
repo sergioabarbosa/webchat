@@ -25,10 +25,10 @@ function dataTestid(name) {
   return `[data-testid=${name}]`;
 }
 
-const chatMessage = 'The more I study, the more insatiable do I feel my genius for it to be.';
-const anotherChatMessage = 'Your best and wisest refuge from all troubles is in your science.';
-const yetAnotherChatMessage = 'The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.';
-const nickname = 'Ada Lovelace';
+const chatMessage = 'Só sei que nada sei.';
+const anotherChatMessage = 'Conhece-te a ti mesmo e conhecerás o universo e os deuses.';
+const yetAnotherChatMessage = 'A vida irrefletida não vale a pena ser vivida.';
+const nickname = 'Sócrates';
 
 describe('3 - Verifique se as mensagens são persistentes', () => {
   let browser;
