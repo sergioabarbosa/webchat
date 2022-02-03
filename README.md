@@ -104,7 +104,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   </div>
   
   <h3>Author</hr>
-  <div align="center"><script src="https://gist.github.com/sergioabarbosa/931ce1ad6de9c24c7f3b6d7848de9fbd.js"></script></div>
+  
  
   
   
