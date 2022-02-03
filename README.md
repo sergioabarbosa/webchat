@@ -92,12 +92,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
 - [Socket](https://reactnative.dev/)
   
+  <div align="justify">
   <h3>Como usar</h3>
   Com o servidor iniciado:
   
   - Com o projeto devidamente clonado e com as dependências instaladas(NPM) digite em seu terminal: npm start.
   - Acesse o endereço do site. Para acesso local digite em seu navegador: http://localhost:3000.
+  - Em seguida digite seu nome de usuário(Nickname) no campo Nickname. Caso opte por enviar mensagens anonimanete deixe esse campo vazio que automaticamente será     gerado um token de acesso ao chat. Veja na imagem abaixo os campos:
+    
   <div align="center"><img src="https://user-images.githubusercontent.com/36240511/152368828-5b344049-7ef5-4b95-9123-6f9d86226557.png" width="750"></div>
+  </div>
   
   
   
