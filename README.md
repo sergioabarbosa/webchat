@@ -107,19 +107,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <div align="center"><img src="https://user-images.githubusercontent.com/36240511/152368828-5b344049-7ef5-4b95-9123-6f9d86226557.png" width="750"></div>
   </div>
   
-  <h3>Author</hr>
-  
-<a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36240511?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Sérgio Barbosa</b></sub></a> <a href="" title="Rocketseat">🚀</a>
-
-
-Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
-
-[![Instagram Badge](https://img.shields.io/badge/-@sergiobarbo-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/Sergio20barbosa)](https://twitter.com/@Sergio20barbosa) [![Linkedin Badge](https://img.shields.io/badge/-Sergio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sergio-alves-barbosa)](https://www.linkedin.com/in/sergio-alves-barbosa/) 
-[![Gmail Badge](https://img.shields.io/badge/-sergio.alvesbarbosa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sergio.alvesbarbosa@gmail.com)](mailto:sergio.alvesbarbosa@gmail.com)
-
   <hr>
   
   <h3>Testes</h3>
@@ -134,8 +121,26 @@ Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
   
   Execução dos testes:
   
-  Com o servidor rodando digite em seu terminal : npm test tests/teste[numero_do_teste]
-  Exempĺos: npm test tests/teste1; npm test tests/teste2; npm test tests/teste3.
+ <p>Com o servidor rodando digite em seu terminal : npm test tests/teste[numero_do_teste]</p>
+  <p>Exempĺos:</p>
+   <p>-> npm test tests/teste1;</p>
+   <p>-> npm test tests/teste2;</p>
+   <p>-> npm test tests/teste3.</p>
+  
+ <hr>
+  
+<h3>Author</h3>
+  
+<a href="https://blog.rocketseat.com.br/author/thiago/">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/36240511?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Sérgio Barbosa</b></sub></a> <a href="" title="Rocketseat">🚀</a>
+
+
+  Feito com ❤️ por Sérgio Barbosa👋🏽 Entre em contato!
+
+  [![Instagram Badge](https://img.shields.io/badge/-@sergiobarbo-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/Sergio20barbosa)](https://twitter.com/@Sergio20barbosa) [![Linkedin Badge](https://img.shields.io/badge/-Sergio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sergio-alves-barbosa)](https://www.linkedin.com/in/sergio-alves-barbosa/) 
+  [![Gmail Badge](https://img.shields.io/badge/-sergio.alvesbarbosa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:sergio.alvesbarbosa@gmail.com)](mailto:sergio.alvesbarbosa@gmail.com)
             
   
   
