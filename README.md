@@ -10,7 +10,7 @@ Tabela de conteúdos
    * [Instalação](#instalação)
    * [Como usar](#como-usar)
    * [Pré Requisitos](#pre-requisitos)
-   * [Tests](#testes)
+   * [Testes](#testes)
    * [Tecnologias](#tecnologias)
    
    <hr>
