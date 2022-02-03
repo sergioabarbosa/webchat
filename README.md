@@ -11,7 +11,7 @@ Tabela de conteúdos
    * [Como usar](#como-usar)
    * [Pré-Requisitos](#pre-requisitos)
    * [Testes](#testes)
-   * [Tecnologias](#tecnologias)
+   * [Tecnologias](#Tecnologias)
    
    <hr>
    
