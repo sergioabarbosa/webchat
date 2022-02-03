@@ -9,7 +9,7 @@ Tabela de conteúdos
    * [Features](#Features)
    * [Instalação](#instalação)
    * [Como usar](#como-usar)
-   * [Pre Requisitos](#pre-requisitos)
+   * [Pré Requisitos](#pre-requisitos)
    * [Tests](#testes)
    * [Tecnologias](#tecnologias)
    
