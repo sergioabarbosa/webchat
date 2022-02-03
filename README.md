@@ -103,6 +103,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <div align="center"><img src="https://user-images.githubusercontent.com/36240511/152368828-5b344049-7ef5-4b95-9123-6f9d86226557.png" width="750"></div>
   </div>
   
+  <h3>Author</hr>
+  <div align="center"><script src="https://gist.github.com/sergioabarbosa/931ce1ad6de9c24c7f3b6d7848de9fbd.js"></script></div>
+ 
   
   
 
