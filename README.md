@@ -119,7 +119,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   Teste 2 - Interface de Usuário para interação dos clientes;
             - Será validado que o front-end tem um campo de texto para preencher um nome de usuário e um botão para alterar o apelido (nickname);
   
-  Reste 3 - Verifique se as mensagens são persistentes;
+  Teste 3 - Verifique se as mensagens são persistentes;
             - Será validado que o histórico de 30 mensagens irá aparecer quando o cliente se conectar;
   
   Execução dos testes:
